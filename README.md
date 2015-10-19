@@ -12,7 +12,7 @@ Code writing test for a basic configurator.
 * Jasmine
 
 **Running:**
-* ```cd`` into your project DIR and run ```npm install```.
+* ```cd``` into your project DIR and run ```npm install```.
 * Run ```./node_modules/karma/bin/karma start``` you should have 26 passing tests (at time of writing).
 
 ## Front-end Quiz
