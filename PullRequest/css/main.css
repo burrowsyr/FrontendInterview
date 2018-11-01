@@ -1,0 +1,24 @@
+.button-wip {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  bottom: 0px;
+  width: 40px;
+  height: 40px;
+  margin: auto 0%;
+  font-size: 12px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+  border: 1px solid #cc9a9a;
+  border-radius: 10px;
+}
+
+.view:hover .button-wip {
+    display: block;
+}
+
+.wip {
+  background-color:#00ff00;
+}

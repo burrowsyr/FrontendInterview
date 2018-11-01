@@ -5,6 +5,7 @@
 		<title>AngularJS • TodoMVC</title>
 		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+    		<link rel="stylesheet" href="css/main.css">
 		<style>[ng-cloak] { display: none; }</style>
 	</head>
 	<body>
@@ -20,9 +21,10 @@
 				<label for="toggle-all">Mark all as complete</label>
 				<ul id="todo-list">
 					<li ng-repeat="todo in todos | filter:statusFilter track by $index" ng-class="{completed: todo.completed, editing: todo == editedTodo}">
-						<div class="view">
+						<div class="view" ng-class="{wip: todo.wip}" style="background-color: {{todo.backgroundColour}}">
 							<input class="toggle" type="checkbox" ng-model="todo.completed" ng-change="todoCompleted(todo)">
 							<label ng-dblclick="editTodo(todo)">{{todo.title}}</label>
+              <button class="button-wip" ng-click="toggleWipOnTodo(todo)">WIP</button>
 							<button class="destroy" ng-click="removeTodo(todo)"></button>
 						</div>
 						<form ng-submit="doneEditing(todo)">
@@ -41,6 +43,9 @@
 					</li>
 					<li>
 						<a ng-class="{selected: location.path() == '/active'}" href="#/active">Active</a>
+					</li>
+          <li>
+						<a ng-class="{selected: location.path() == '/wip'}" href="#/wip">WIP</a>
 					</li>
 					<li>
 						<a ng-class="{selected: location.path() == '/completed'}" href="#/completed">Completed</a>
