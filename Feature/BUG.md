@@ -1,4 +1,9 @@
-###Car selection is incorrect when selecting Blue paint.###
+## Notes
+This code was written over 2 years ago. Which is why we are not using classes, arrow functions and so forth.
+When completing the this test feel free to use any version of JavaScript supported by Nodes newest version.
+If you can complete it in ES3 / ES5 then knock yourself out.
+
+### Car selection is incorrect when selecting Blue paint.
 
 When selecting the Blue paint from Msc 221 the configurator is returning the wrong vehicle.
 

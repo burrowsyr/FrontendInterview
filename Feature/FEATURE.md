@@ -1,3 +1,8 @@
+## Notes
+This code was written over 2 years ago. Which is why we are not using classes, arrow functions and so forth.
+When completing the this test feel free to use any version of JavaScript supported by Nodes newest version.
+If you can complete it in ES3 / ES5 then knock yourself out.
+
 Add German market with different NEW query logic.
 
 The configurator needs to now support the German market of de-de. The market has requested a different logic for managing conflicts, but we cannot affect the markets already using the configurator. The German market will use the same vehicle data that is currently used for the UK.
