@@ -76,5 +76,13 @@ describe('ConfigurationBasicQuery', function () {
 
       expect(newConfig.msc).toEqual('122');
     });
+
+    it('should return the a clone of vehicle 111 with color blue querying a vehicle with a change that is not allowed', function () {
+      var newColor = 'blue',
+          newConfig = queryEngine.getConfigurationWith(newColor, 'color', testHelpers.vehicle.mscs[7]);
+
+      expect(newConfig.msc).toEqual('111');
+      expect(newConfig.color).toEqual(newColor);
+    });
   });
 });
